@@ -204,6 +204,7 @@ const App = () => {
       </Alert>
       {/* Бібліотека React Icons */}
       <UserMenu name="Alex" />
+      <button onClick={() => alert("I'm a button!")}>Click me!</button>
     </>
   );
 };
