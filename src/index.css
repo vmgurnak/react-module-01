@@ -34,7 +34,7 @@ a {
   display: block;
 }
 
-button {
+/* button {
   display: block;
   padding: 0;
 
@@ -43,7 +43,7 @@ button {
   border: none;
   outline: none;
   background-color: transparent;
-}
+} */
 
 img {
   display: block;
