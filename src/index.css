@@ -40,9 +40,9 @@ button {
 
   font-family: inherit;
   cursor: pointer;
-  border: none;
-  outline: none;
-  background-color: transparent;
+  /* border: none;
+  outline: none; */
+  /* background-color: transparent; */
 }
 
 img {
