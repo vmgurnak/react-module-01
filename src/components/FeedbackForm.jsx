@@ -287,9 +287,8 @@
 // --------------------------Бібліотека Formik. Помилки валідації---------------------------------
 
 import { useId } from 'react';
-import { Formik, Form, Field } from 'formik';
+import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-import { ErrorMessage } from 'formik';
 
 const FeedbackSchema = Yup.object().shape({
   username: Yup.string()
