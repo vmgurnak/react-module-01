@@ -154,29 +154,57 @@
 
 // Якщо радіо-кнопки призначені для вибору одного з багатьох елементів, то чекбокси дозволяють обрати багато з багатьох. Чекбокс, так само, як і радіо-кнопка, може знаходитися в двох станах: обраний або ні.
 
-import { useState } from 'react';
+// import { useState } from 'react';
+
+// const App = () => {
+//   const [hasAccepted, setHasAccepted] = useState(false);
+
+//   const handleChange = evt => {
+//     setHasAccepted(evt.target.checked);
+//   };
+
+//   return (
+//     <div>
+//       <label>
+//         <input
+//           type="checkbox"
+//           name="terms"
+//           checked={hasAccepted}
+//           onChange={handleChange}
+//         />
+//         I accept terms and conditions
+//       </label>
+//       <button type="button" disabled={!hasAccepted}>
+//         Proceed
+//       </button>
+//     </div>
+//   );
+// };
+
+// export default App;
+
+// -------------------------------Контрольована форма-----------------------------
+
+// import LoginForm from './components/LoginForm';
+
+// const App = () => {
+//   return (
+//     <div>
+//       <LoginForm />
+//     </div>
+//   );
+// };
+
+// export default App;
+
+// -------------------Бібліотека Formik. Контейнер форми------------------
+
+import FeedbackForm from './components/FeedbackForm';
 
 const App = () => {
-  const [hasAccepted, setHasAccepted] = useState(false);
-
-  const handleChange = evt => {
-    setHasAccepted(evt.target.checked);
-  };
-
   return (
     <div>
-      <label>
-        <input
-          type="checkbox"
-          name="terms"
-          checked={hasAccepted}
-          onChange={handleChange}
-        />
-        I accept terms and conditions
-      </label>
-      <button type="button" disabled={!hasAccepted}>
-        Proceed
-      </button>
+      <FeedbackForm />
     </div>
   );
 };
